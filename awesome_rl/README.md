@@ -1,87 +1,112 @@
-# Awesome Reinforcement Learning
+# Shivam Awesome Reinforcement Learning
 
-A curated roadmap of papers, libraries, datasets/environments, courses, tools, projects, blogs, and benchmarks for modern Reinforcement Learning (RL).
+A curated, practical map of modern Reinforcement Learning from core theory to scalable systems.
 
-## 🚀 Start Here (Beginner → Advanced path)
+## 🧭 Learning Path (Beginner → Advanced)
 
-1. **Foundations:** Learn MDPs, value functions, policy gradients, and exploration via [Sutton & Barto (2nd ed.)](http://incompleteideas.net/book/the-book-2nd.html).
-2. **Classical deep RL:** Study [DQN](https://www.nature.com/articles/nature14236), [A3C](https://arxiv.org/abs/1602.01783), and [DDPG](https://arxiv.org/abs/1509.02971).
-3. **Modern policy optimization:** Read [TRPO](https://arxiv.org/abs/1502.05477), [PPO](https://arxiv.org/abs/1707.06347), and [SAC](https://arxiv.org/abs/1801.01290).
-4. **Model-based + planning:** Learn from [MuZero](https://arxiv.org/abs/1911.08265) and [DreamerV3](https://arxiv.org/abs/2301.04104).
-5. **Offline RL & sequence modeling:** Explore [D4RL](https://arxiv.org/abs/2004.07219), [Decision Transformer](https://arxiv.org/abs/2106.01345), and [CQL](https://arxiv.org/abs/2006.04779).
-6. **Scale and systems:** Build projects with [Gymnasium](https://github.com/Farama-Foundation/Gymnasium), [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3), and [Ray RLlib](https://github.com/ray-project/ray).
+1. **RL foundations:** Master MDPs, Bellman equations, and policy/value methods with [Sutton & Barto](http://incompleteideas.net/book/the-book-2nd.html).
+2. **Deep RL basics:** Study [DQN](https://arxiv.org/abs/1312.5602), [A3C](https://arxiv.org/abs/1602.01783), and [DDPG](https://arxiv.org/abs/1509.02971).
+3. **Modern control defaults:** Build intuition with [PPO](https://arxiv.org/abs/1707.06347), [SAC](https://arxiv.org/abs/1801.01290), and [TD3](https://arxiv.org/abs/1802.09477).
+4. **Planning + world models:** Read [MuZero](https://arxiv.org/abs/1911.08265) and [DreamerV3](https://arxiv.org/abs/2301.04104).
+5. **Offline RL:** Learn [D4RL](https://arxiv.org/abs/2004.07219), [Decision Transformer](https://arxiv.org/abs/2106.01345), and [CQL](https://arxiv.org/abs/2006.04779).
+6. **Distributed RL systems:** Use [Gymnasium](https://github.com/Farama-Foundation/Gymnasium), [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3), and [RLlib](https://docs.ray.io/en/latest/rllib/index.html).
 
-## 📄 Papers (with links + 1-line why it matters)
+## 📄 Papers (with links + 1-line insight)
 
-- [Playing Atari with Deep Reinforcement Learning (DQN)](https://arxiv.org/abs/1312.5602) — Introduced deep Q-learning that launched deep RL at scale.
-- [Human-level control through deep reinforcement learning](https://www.nature.com/articles/nature14236) — Showed DQN could achieve strong Atari performance from pixels.
-- [Asynchronous Methods for Deep Reinforcement Learning (A3C)](https://arxiv.org/abs/1602.01783) — Stabilized and accelerated training with asynchronous actor-learners.
-- [Trust Region Policy Optimization (TRPO)](https://arxiv.org/abs/1502.05477) — Introduced constrained policy updates for safer optimization.
-- [Proximal Policy Optimization Algorithms (PPO)](https://arxiv.org/abs/1707.06347) — Became a practical default for robust on-policy RL.
-- [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/abs/1509.02971) — Extended deterministic policy gradients to deep continuous control.
-- [Soft Actor-Critic (SAC)](https://arxiv.org/abs/1801.01290) — Added entropy maximization for stable, sample-efficient learning.
-- [Twin Delayed DDPG (TD3)](https://arxiv.org/abs/1802.09477) — Reduced overestimation bias in actor-critic methods.
-- [Mastering the game of Go with deep neural networks and tree search (AlphaGo)](https://www.nature.com/articles/nature16961) — Combined policy/value nets with MCTS to surpass top human play.
-- [Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm (AlphaZero)](https://arxiv.org/abs/1712.01815) — Generalized self-play plus search across multiple board games.
-- [Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model (MuZero)](https://arxiv.org/abs/1911.08265) — Learned a latent dynamics model for planning without known rules.
-- [Dream to Control: Learning Behaviors by Latent Imagination (Dreamer)](https://arxiv.org/abs/1912.01603) — Made model-based RL practical via latent rollouts.
-- [Mastering Diverse Domains through World Models (DreamerV3)](https://arxiv.org/abs/2301.04104) — Demonstrated robust world-model scaling across tasks.
-- [D4RL: Datasets for Deep Data-Driven Reinforcement Learning](https://arxiv.org/abs/2004.07219) — Standardized offline RL evaluation datasets and protocols.
-- [Offline Reinforcement Learning as One Big Sequence Modeling Problem (Decision Transformer)](https://arxiv.org/abs/2106.01345) — Reframed RL as conditional sequence modeling with transformers.
-- [Conservative Q-Learning for Offline Reinforcement Learning (CQL)](https://arxiv.org/abs/2006.04779) — Improved robustness by conservatively estimating Q-values offline.
+- [Playing Atari with Deep Reinforcement Learning (DQN)](https://arxiv.org/abs/1312.5602) — Introduced deep Q-learning for pixel-based control.
+- [Asynchronous Methods for Deep Reinforcement Learning (A3C)](https://arxiv.org/abs/1602.01783) — Used parallel actor-learners for stable and faster optimization.
+- [Proximal Policy Optimization Algorithms (PPO)](https://arxiv.org/abs/1707.06347) — Delivered a robust, practical trust-region approximation.
+- [Soft Actor-Critic (SAC)](https://arxiv.org/abs/1801.01290) — Improved sample efficiency via maximum-entropy objectives.
+- [Mastering Atari, Go, Chess and Shogi by Planning with a Learned Model (MuZero)](https://arxiv.org/abs/1911.08265) — Combined planning and learned dynamics without known environment rules.
+- [Offline Reinforcement Learning as One Big Sequence Modeling Problem (Decision Transformer)](https://arxiv.org/abs/2106.01345) — Reframed offline RL as conditional sequence modeling.
+
+## 🔗 Paper → Code Mapping
+
+| Paper | Official / Best Implementation |
+|---|---|
+| [DQN](https://arxiv.org/abs/1312.5602) | [CleanRL DQN](https://github.com/vwxyzjn/cleanrl) |
+| [PPO](https://arxiv.org/abs/1707.06347) | [Stable-Baselines3 PPO](https://github.com/DLR-RM/stable-baselines3) |
+| [SAC](https://arxiv.org/abs/1801.01290) | [Stable-Baselines3 SAC](https://github.com/DLR-RM/stable-baselines3) |
+| [MuZero](https://arxiv.org/abs/1911.08265) | [muzero-general](https://github.com/werner-duvaud/muzero-general) |
+| [DreamerV3](https://arxiv.org/abs/2301.04104) | [danijar/dreamerv3](https://github.com/danijar/dreamerv3) |
+| [Decision Transformer](https://arxiv.org/abs/2106.01345) | [kzl/decision-transformer](https://github.com/kzl/decision-transformer) |
 
 ## 🧰 Libraries & Frameworks
 
-- [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3) — Reliable PyTorch implementations of standard RL algorithms.
-- [Ray RLlib](https://github.com/ray-project/ray) — Scalable distributed RL training and serving framework.
-- [CleanRL](https://github.com/vwxyzjn/cleanrl) — Single-file high-quality RL baselines for clarity and reproducibility.
-- [Tianshou](https://github.com/thu-ml/tianshou) — Modular RL library for research-focused experimentation.
-- [Acme](https://github.com/google-deepmind/acme) — DeepMind RL framework for reusable agents and components.
+- [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3) — Reliable PyTorch baselines for common RL algorithms.
+- [Ray RLlib](https://github.com/ray-project/ray) — Distributed RL training for large-scale experimentation.
+- [CleanRL](https://github.com/vwxyzjn/cleanrl) — Minimal single-file implementations for reproducible RL research.
+- [Tianshou](https://github.com/thu-ml/tianshou) — Modular RL framework with flexible replay and policy APIs.
+- [Acme](https://github.com/google-deepmind/acme) — Reusable agent components from DeepMind research workflows.
 
 ## 📊 Datasets / Environments
 
-- [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) — Standard API and benchmark environment suite for RL.
-- [MinAtar](https://github.com/kenjyoung/MinAtar) — Simplified Atari-like environments for faster algorithm analysis.
+- [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) — Standard environment API for RL experiments.
+- [Atari Learning Environment (ALE)](https://github.com/Farama-Foundation/Arcade-Learning-Environment) — Canonical benchmark for visual RL.
 - [DM Control Suite](https://github.com/google-deepmind/dm_control) — Continuous control benchmark built on MuJoCo.
-- [Atari Learning Environment (ALE)](https://github.com/Farama-Foundation/Arcade-Learning-Environment) — Canonical arcade benchmark for RL agents.
-- [Procgen Benchmark](https://github.com/openai/procgen) — Procedurally generated environments for generalization testing.
-- [D4RL](https://github.com/Farama-Foundation/D4RL) — Offline RL datasets for locomotion, manipulation, and driving tasks.
+- [Procgen](https://github.com/openai/procgen) — Generalization benchmark via procedurally generated tasks.
+- [D4RL](https://github.com/Farama-Foundation/D4RL) — Standardized offline RL datasets and evaluation tasks.
 
 ## 🎓 Courses
 
-- [UCL Course on RL (David Silver)](https://www.davidsilver.uk/teaching/) — Classic lecture series on core RL theory and practice.
-- [Stanford CS234: Reinforcement Learning](https://web.stanford.edu/class/cs234/) — Comprehensive university course covering modern RL methods.
-- [DeepMind x UCL RL Lecture Series](https://www.deepmind.com/learning-resources/reinforcement-learning-lecture-series-2021) — Advanced lectures from leading RL researchers.
-- [Spinning Up in Deep RL](https://spinningup.openai.com/en/latest/) — Practical educational guide with algorithm intuition and code.
+- [UCL RL Course (David Silver)](https://www.davidsilver.uk/teaching/) — Classic lecture sequence for RL fundamentals.
+- [Stanford CS234](https://web.stanford.edu/class/cs234/) — Comprehensive RL course from theory to deep RL.
+- [Spinning Up in Deep RL](https://spinningup.openai.com/en/latest/) — Practical educational resource with implementation guidance.
+
+## 🧪 Experiments (Actionable)
+
+- **On-policy vs off-policy:** Compare PPO, SAC, and TD3 on identical MuJoCo compute budgets.
+- **Offline RL quality:** Benchmark behavior cloning, CQL, and Decision Transformer on D4RL tasks.
+- **Generalization stress test:** Train on Procgen easy seeds and evaluate out-of-distribution seeds.
+
+## 🏗 RL System Design (IMPORTANT)
+
+- **Simulator throughput first:** Parallelized environment stepping often yields bigger wins than model tweaks.
+- **Reproducibility envelope:** Track seeds, environment versions, and eval protocols as first-class artifacts.
+- **Evaluation pipeline:** Separate training rewards from standardized evaluation rollouts to avoid leakage.
+
+## ⚙️ RL Infra / Serving (DevOps angle)
+
+- [Ray Serve](https://docs.ray.io/en/latest/serve/index.html) — Scalable policy serving and online decision APIs.
+- [KubeRay](https://docs.ray.io/en/latest/cluster/kubernetes/index.html) — Kubernetes-native orchestration for distributed RL jobs.
+- [Weights & Biases](https://wandb.ai/site) — Experiment tracking for seeds, sweeps, and replay artifacts.
+- [MLflow](https://github.com/mlflow/mlflow) — Model packaging, registry, and deployment workflows.
+
+## 🧩 Use Cases
+
+- **Robotics control:** Continuous control policies with sim-to-real adaptation.
+- **Operations research:** Dynamic pricing, inventory, and routing optimization.
+- **Game AI:** Self-play and planning-driven agents for strategic environments.
+- **Resource scheduling:** Cluster/job scheduling under changing workloads.
+
+## 📈 Evaluation Metrics
+
+- **Average episodic return** — Primary policy performance metric.
+- **Success rate** — Task completion reliability across randomized episodes.
+- **Sample efficiency** — Reward achieved per environment interaction.
+- **Regret / constraint violation** — Safety and online optimization quality metrics.
 
 ## 🛠 Tools / Ecosystem
 
-- [Weights & Biases](https://wandb.ai/site) — Experiment tracking and comparison for RL training runs.
-- [TensorBoard](https://www.tensorflow.org/tensorboard) — Visualization tool for reward curves and diagnostics.
-- [PettingZoo](https://github.com/Farama-Foundation/PettingZoo) — Multi-agent RL environment API and benchmark suite.
-- [EnvPool](https://github.com/sail-sg/envpool) — Highly parallel environment execution for faster training throughput.
-
-## 🧪 Projects / Ideas
-
-- Reproduce PPO baselines on CartPole, LunarLander, and HalfCheetah with seed variance analysis.
-- Compare SAC vs TD3 sample efficiency on continuous control with consistent hyperparameters.
-- Build an offline RL pipeline on D4RL and analyze behavior cloning vs CQL.
-- Implement reward shaping for sparse-reward tasks and quantify stability trade-offs.
-- Train a multi-agent policy in PettingZoo and evaluate emergent coordination behavior.
-- Benchmark model-free vs model-based agents under fixed compute budgets.
-- Add curriculum learning to Procgen tasks and measure out-of-distribution generalization.
-- Create a reproducibility checklist and report for one published RL paper.
+- [PettingZoo](https://github.com/Farama-Foundation/PettingZoo) — Standardized multi-agent RL environment API.
+- [EnvPool](https://github.com/sail-sg/envpool) — High-throughput vectorized environments for faster training.
+- [TensorBoard](https://www.tensorflow.org/tensorboard) — Visual diagnostics for reward, losses, and instability signals.
 
 ## 📝 Blogs / Learning Resources
 
-- [Lil'Log (Lilian Weng) — Policy Gradient Algorithms](https://lilianweng.github.io/posts/2018-04-08-policy-gradient/) — Clear walkthrough of policy gradient foundations.
-- [OpenAI Spinning Up Docs](https://spinningup.openai.com/en/latest/spinningup/rl_intro.html) — Concise conceptual guide to key RL ideas.
-- [Distill: Feature Visualization](https://distill.pub/) — High-quality interactive ML articles helpful for RL intuition.
-- [DeepMind Publications](https://deepmind.google/research/publications/) — Primary source for landmark RL papers and reports.
+- [Lilian Weng on Policy Gradients](https://lilianweng.github.io/posts/2018-04-08-policy-gradient/) — Clear conceptual guide to gradient-based RL.
+- [OpenAI Spinning Up Intro](https://spinningup.openai.com/en/latest/spinningup/rl_intro.html) — Concise and practical RL conceptual primer.
+- [DeepMind Publications](https://deepmind.google/research/publications/) — Primary-source archive for major RL advances.
 
-## 📈 Benchmarks
+## 📊 Benchmarks
 
-- [Atari 2600 / ALE](https://github.com/Farama-Foundation/Arcade-Learning-Environment) — Long-standing benchmark for visual control and exploration.
-- [MuJoCo](https://mujoco.org/) — Standard continuous control benchmark used across actor-critic methods.
-- [Procgen](https://github.com/openai/procgen) — Tests generalization via procedurally generated task distributions.
-- [D4RL](https://github.com/Farama-Foundation/D4RL) — Widely used benchmark suite for offline reinforcement learning.
+- [ALE / Atari](https://github.com/Farama-Foundation/Arcade-Learning-Environment) — Long-standing benchmark for visual control.
+- [MuJoCo](https://mujoco.org/) — Standard continuous-control benchmark suite.
+- [Procgen](https://github.com/openai/procgen) — Generalization-focused procedural benchmark.
+- [D4RL](https://github.com/Farama-Foundation/D4RL) — Core benchmark for offline RL algorithms.
+
+## ✍️ Shivam’s Notes (Insight Section)
+
+- Most RL papers underreport instability; always compare across multiple seeds.
+- Better environment instrumentation often beats more complex policy architectures.
+- Offline RL can outperform online RL in production when exploration is unsafe or expensive.

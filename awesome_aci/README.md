@@ -1,91 +1,116 @@
-# Awesome Artificial & Computational Intelligence
+# Shivam Awesome Artificial & Computational Intelligence
 
-A curated roadmap of papers, libraries, datasets, courses, tools, projects, blogs, and benchmarks for Artificial Intelligence (AI) and Computational Intelligence (CI).
+A curated guide for Artificial Intelligence and Computational Intelligence spanning theory, optimization, and modern foundation models.
 
-## 🚀 Start Here (Beginner → Advanced path)
+## 🧭 Learning Path (Beginner → Advanced)
 
-1. **Core AI foundations:** Learn search, logic, probabilistic reasoning, and planning from [AIMA](https://aima.cs.berkeley.edu/).
-2. **Machine learning fundamentals:** Build intuition with [Pattern Recognition and Machine Learning](https://link.springer.com/book/10.1007/978-0-387-45528-0) and [Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/).
-3. **Deep learning era:** Study [Deep Learning](https://www.deeplearningbook.org/), [AlexNet](https://dl.acm.org/doi/10.1145/3065386), and [ResNet](https://arxiv.org/abs/1512.03385).
-4. **Modern foundation models:** Read [Transformer](https://arxiv.org/abs/1706.03762), [BERT](https://arxiv.org/abs/1810.04805), [GPT-3](https://arxiv.org/abs/2005.14165), and [CLIP](https://arxiv.org/abs/2103.00020).
-5. **Computational intelligence methods:** Explore [Particle Swarm Optimization](https://ieeexplore.ieee.org/document/488968), [Differential Evolution](https://link.springer.com/article/10.1023/A:1008202821328), and [NEAT](https://nn.cs.utexas.edu/?stanley:ec02).
-6. **Responsible deployment:** Learn evaluation and safety with [HELM](https://crfm.stanford.edu/helm/) and [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework).
+1. **Classical AI foundations:** Study search, logic, and planning from [AIMA](https://aima.cs.berkeley.edu/).
+2. **Statistical ML core:** Build fundamentals with [Pattern Recognition and Machine Learning](https://link.springer.com/book/10.1007/978-0-387-45528-0) and [Elements of Statistical Learning](https://hastie.su.domains/ElemStatLearn/).
+3. **Deep learning transition:** Learn representation learning through [Deep Learning](https://www.deeplearningbook.org/), [AlexNet](https://arxiv.org/abs/1404.5997), and [ResNet](https://arxiv.org/abs/1512.03385).
+4. **Foundation model era:** Read [Transformer](https://arxiv.org/abs/1706.03762), [BERT](https://arxiv.org/abs/1810.04805), and [GPT-3](https://arxiv.org/abs/2005.14165).
+5. **Computational intelligence methods:** Deepen with [Particle Swarm Optimization](https://ieeexplore.ieee.org/document/488968), [Differential Evolution](https://link.springer.com/article/10.1023/A:1008202821328), and [NEAT](https://nn.cs.utexas.edu/?stanley:ec02).
+6. **Responsible AI deployment:** Ground evaluation and governance in [HELM](https://crfm.stanford.edu/helm/) and [NIST AI RMF](https://www.nist.gov/itl/ai-risk-management-framework).
 
-## 📄 Papers (with links + 1-line why it matters)
+## 📄 Papers (with links + 1-line insight)
 
-- [Computing Machinery and Intelligence](https://www.csee.umbc.edu/courses/471/papers/turing.pdf) — Classic paper that framed machine intelligence as an operational question.
-- [A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence](http://jmc.stanford.edu/articles/dartmouth/dartmouth.pdf) — Foundational document that named and launched AI as a field.
-- [A Formal Basis for the Heuristic Determination of Minimum Cost Paths (A*)](https://ieeexplore.ieee.org/document/4082128) — Introduced A* search, a cornerstone of classical AI planning.
-- [Probabilistic Reasoning in Intelligent Systems](https://www.sciencedirect.com/book/9780080514895/probabilistic-reasoning-in-intelligent-systems) — Established Bayesian networks for uncertain reasoning.
-- [Learning representations by back-propagating errors](https://www.nature.com/articles/323533a0) — Popularized backpropagation for neural network training.
-- [ImageNet Classification with Deep Convolutional Neural Networks (AlexNet)](https://dl.acm.org/doi/10.1145/3065386) — Sparked modern deep learning adoption at scale.
-- [Deep Residual Learning for Image Recognition (ResNet)](https://arxiv.org/abs/1512.03385) — Enabled training much deeper and more accurate neural models.
-- [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — Introduced transformer architectures that power modern AI systems.
-- [BERT: Pre-training of Deep Bidirectional Transformers](https://arxiv.org/abs/1810.04805) — Made transfer learning dominant in NLP via bidirectional pretraining.
-- [Language Models are Few-Shot Learners (GPT-3)](https://arxiv.org/abs/2005.14165) — Demonstrated powerful in-context learning in large language models.
-- [Learning Transferable Visual Models From Natural Language Supervision (CLIP)](https://arxiv.org/abs/2103.00020) — Unified vision-language alignment for zero-shot transfer.
-- [Particle Swarm Optimization](https://ieeexplore.ieee.org/document/488968) — Landmark swarm-intelligence optimizer inspired by social behavior.
-- [Differential Evolution – A Simple and Efficient Heuristic for Global Optimization](https://link.springer.com/article/10.1023/A:1008202821328) — Influential evolutionary strategy for continuous optimization.
-- [Neuroevolution of Augmenting Topologies (NEAT)](https://nn.cs.utexas.edu/?stanley:ec02) — Evolved both network weights and topologies for adaptive learning.
-- [Random Forests](https://link.springer.com/article/10.1023/A:1010933404324) — Robust ensemble method widely used for tabular AI tasks.
+- [A Formal Basis for the Heuristic Determination of Minimum Cost Paths (A*)](https://ieeexplore.ieee.org/document/4082128) — Established optimal graph search under admissible heuristics.
+- [Learning representations by back-propagating errors](https://www.nature.com/articles/323533a0) — Popularized end-to-end gradient-based neural learning.
+- [Deep Residual Learning for Image Recognition (ResNet)](https://arxiv.org/abs/1512.03385) — Residual connections enabled depth scaling across AI tasks.
+- [Attention Is All You Need](https://arxiv.org/abs/1706.03762) — Introduced transformer architecture underpinning modern foundation models.
+- [BERT](https://arxiv.org/abs/1810.04805) — Made transfer learning central for language understanding tasks.
+- [Language Models are Few-Shot Learners (GPT-3)](https://arxiv.org/abs/2005.14165) — Demonstrated strong in-context learning via scaling.
+- [Particle Swarm Optimization](https://ieeexplore.ieee.org/document/488968) — Landmark swarm-intelligence optimizer for black-box optimization.
+- [Differential Evolution](https://link.springer.com/article/10.1023/A:1008202821328) — Efficient evolutionary strategy for continuous global optimization.
+
+## 🔗 Paper → Code Mapping
+
+| Paper | Official / Best Implementation |
+|---|---|
+| [A* search](https://ieeexplore.ieee.org/document/4082128) | [NetworkX shortest paths](https://networkx.org/documentation/stable/reference/algorithms/shortest_paths.html) |
+| [ResNet](https://arxiv.org/abs/1512.03385) | [torchvision models](https://github.com/pytorch/vision) |
+| [Transformer](https://arxiv.org/abs/1706.03762) | [Hugging Face Transformers](https://github.com/huggingface/transformers) |
+| [BERT](https://arxiv.org/abs/1810.04805) | [google-research/bert](https://github.com/google-research/bert) |
+| [GPT-style models (GPT-3 reference)](https://arxiv.org/abs/2005.14165) | [nanoGPT](https://github.com/karpathy/nanoGPT) |
+| [Differential Evolution](https://link.springer.com/article/10.1023/A:1008202821328) | [SciPy differential_evolution](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.differential_evolution.html) |
+| [Particle Swarm Optimization](https://ieeexplore.ieee.org/document/488968) | [PySwarms](https://github.com/ljvmiranda921/pyswarms) |
 
 ## 🧰 Libraries & Frameworks
 
-- [PyTorch](https://github.com/pytorch/pytorch) — Core framework for deep learning and research prototyping.
-- [TensorFlow](https://github.com/tensorflow/tensorflow) — Production-grade ecosystem for large-scale AI training/inference.
-- [scikit-learn](https://github.com/scikit-learn/scikit-learn) — Standard machine learning toolkit for classical AI methods.
-- [JAX](https://github.com/jax-ml/jax) — High-performance numerical computing with composable autodiff.
-- [Keras](https://github.com/keras-team/keras) — High-level API for rapid deep learning experimentation.
-- [DEAP](https://github.com/DEAP/deap) — Evolutionary computation framework for genetic and swarm algorithms.
-- [PySwarms](https://github.com/ljvmiranda921/pyswarms) — Particle swarm optimization toolkit in Python.
+- [PyTorch](https://github.com/pytorch/pytorch) — Core deep learning framework for research and production.
+- [TensorFlow](https://github.com/tensorflow/tensorflow) — End-to-end ML ecosystem for training and serving.
+- [scikit-learn](https://github.com/scikit-learn/scikit-learn) — Standard toolkit for classical machine learning workflows.
+- [JAX](https://github.com/jax-ml/jax) — High-performance autodiff and accelerator-friendly numerics.
+- [DEAP](https://github.com/DEAP/deap) — Evolutionary computation toolbox for CI experiments.
 
 ## 📊 Datasets
 
-- [UCI Machine Learning Repository](https://archive.ics.uci.edu/) — Foundational dataset archive for classical AI/ML benchmarks.
-- [OpenML](https://www.openml.org/) — Open platform for datasets, tasks, and reproducible experiments.
-- [ImageNet](https://www.image-net.org/) — Canonical large-scale visual recognition dataset.
-- [COCO](https://cocodataset.org/) — Standard benchmark for detection and segmentation tasks.
-- [Common Crawl](https://commoncrawl.org/) — Massive web corpus used for large-model pretraining.
-- [MIMIC-IV](https://physionet.org/content/mimiciv/) — Public clinical dataset for healthcare AI research.
+- [UCI ML Repository](https://archive.ics.uci.edu/) — Canonical tabular benchmarks for classical ML and CI.
+- [OpenML](https://www.openml.org/) — Reproducible benchmark tasks with datasets and experiment records.
+- [ImageNet](https://www.image-net.org/) — Standard visual benchmark for large-scale learning.
+- [COCO](https://cocodataset.org/) — Benchmark for detection and segmentation systems.
+- [Common Crawl](https://commoncrawl.org/) — Web-scale text corpus for language pretraining.
 
 ## 🎓 Courses
 
-- [MIT 6.034 Artificial Intelligence](https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/) — Classic course on search, reasoning, and knowledge-based AI.
-- [Stanford CS221: Artificial Intelligence: Principles and Techniques](https://stanford-cs221.github.io/autumn2025/) — Broad AI course covering core paradigms and modern methods.
-- [Stanford CS229: Machine Learning](https://cs229.stanford.edu/) — Rigorous treatment of supervised and unsupervised ML.
-- [DeepLearning.AI Machine Learning Specialization](https://www.coursera.org/specializations/machine-learning-introduction) — Practical modern ML track for beginners to intermediates.
+- [MIT 6.034 Artificial Intelligence](https://ocw.mit.edu/courses/6-034-artificial-intelligence-fall-2010/) — Strong foundation in symbolic and classical AI methods.
+- [Stanford CS221](https://stanford-cs221.github.io/) — Broad AI course spanning search, MDPs, and probabilistic models.
+- [Stanford CS229](https://cs229.stanford.edu/) — Core mathematical treatment of machine learning.
+
+## 🧪 Experiments (Actionable)
+
+- **Hybrid AI pipeline:** Combine symbolic constraints with neural classifiers and measure consistency gains.
+- **Optimizer comparison:** Benchmark PSO, DE, and Bayesian optimization on the same black-box objective suite.
+- **Foundation-model baseline:** Compare frozen-embedding linear probes vs full fine-tuning on domain tasks.
+
+## 🏗 AI/CI System Design (IMPORTANT)
+
+- **Model portfolio design:** Use lightweight models for routing and expensive models for hard cases.
+- **Human-in-the-loop controls:** Add review checkpoints where uncertainty or risk exceeds thresholds.
+- **Lifecycle governance:** Enforce data versioning, model cards, and deployment rollback strategies.
+
+## ⚙️ AI Infra / Serving (DevOps angle)
+
+- [Ray](https://github.com/ray-project/ray) — Distributed execution framework for scalable AI workloads.
+- [MLflow](https://github.com/mlflow/mlflow) — Experiment tracking, model registry, and deployment packaging.
+- [Kubeflow](https://www.kubeflow.org/) — Kubernetes-native orchestration for ML pipelines.
+- [ONNX Runtime](https://github.com/microsoft/onnxruntime) — Portable high-performance inference engine.
+
+## 🧩 Use Cases
+
+- **Decision intelligence:** Forecasting and optimization for operations and logistics.
+- **Autonomous systems:** Perception + planning pipelines for robotics and mobility.
+- **Healthcare AI:** Risk prediction and triage support with safety and audit constraints.
+- **Finance analytics:** Fraud detection and risk modeling with explainability requirements.
+
+## 📈 Evaluation Metrics
+
+- **Accuracy / F1 / AUROC** — Core supervised learning metrics across class imbalance regimes.
+- **Calibration error (ECE)** — Reliability metric for probabilistic decision support.
+- **Latency / throughput / cost** — Operational metrics for production deployment quality.
+- **Constraint violation rate** — Governance metric for safety and rule-based compliance.
 
 ## 🛠 Tools / Ecosystem
 
-- [Weights & Biases](https://wandb.ai/site) — Experiment tracking and model lifecycle management.
-- [MLflow](https://github.com/mlflow/mlflow) — Open-source platform for tracking, packaging, and deployment.
-- [DVC](https://github.com/iterative/dvc) — Data/model versioning for reproducible AI pipelines.
-- [Ray](https://github.com/ray-project/ray) — Distributed compute framework for scalable AI workloads.
-- [ONNX](https://github.com/onnx/onnx) — Interoperability format for cross-framework model deployment.
-
-## 🧪 Projects / Ideas
-
-- Build a hybrid AI system combining symbolic rules with neural classifiers.
-- Compare classical ML baselines vs deep models on UCI tabular datasets.
-- Implement and benchmark PSO, DE, and GA on the same optimization suite.
-- Create an AutoML workflow with reproducible tracking and model registry.
-- Build a multimodal classifier by combining image and text embeddings.
-- Reproduce a benchmark with strict seed control and ablation reporting.
-- Develop an explainability dashboard using SHAP-like feature attributions.
-- Create a responsible-AI checklist and audit report for a deployed model.
+- [Weights & Biases](https://wandb.ai/site) — Experiment tracking and collaboration across teams.
+- [DVC](https://github.com/iterative/dvc) — Versioning for data, models, and reproducible pipelines.
+- [Great Expectations](https://github.com/great-expectations/great_expectations) — Data quality validation for robust ML systems.
+- [SHAP](https://github.com/shap/shap) — Model explainability toolkit for feature-level attribution.
 
 ## 📝 Blogs / Learning Resources
 
-- [Distill](https://distill.pub/) — High-quality visual and conceptual deep learning explainers.
-- [The Gradient](https://thegradient.pub/) — Accessible expert commentary on AI research trends.
-- [Google AI Blog](https://research.google/blog/) — Updates on research and production AI systems.
-- [OpenAI Research](https://openai.com/research/) — Frontier model research and technical reports.
-- [DeepMind Publications](https://deepmind.google/research/publications/) — Primary source for leading AI papers.
+- [Distill](https://distill.pub/) — High-quality visual explainers for ML and deep learning concepts.
+- [The Gradient](https://thegradient.pub/) — Research-grounded AI analysis and commentary.
+- [DeepMind Publications](https://deepmind.google/research/publications/) — Primary source for many influential AI papers.
 
-## 📈 Benchmarks
+## 📊 Benchmarks
 
-- [GLUE](https://gluebenchmark.com/) — Widely used benchmark suite for language understanding.
-- [MMLU](https://arxiv.org/abs/2009.03300) — Broad multitask benchmark for model knowledge and reasoning.
-- [HELM](https://crfm.stanford.edu/helm/) — Holistic language model evaluation across scenarios and metrics.
-- [ImageNet Benchmark](https://paperswithcode.com/sota/image-classification-on-imagenet) — Standard benchmark for image classification progress.
-- [COCO Object Detection](https://paperswithcode.com/sota/object-detection-on-coco) — Core benchmark for object detection performance.
+- [MMLU](https://arxiv.org/abs/2009.03300) — Broad multitask benchmark for knowledge and reasoning.
+- [HELM](https://crfm.stanford.edu/helm/) — Holistic benchmark for reliability across use scenarios.
+- [ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet) — Standard benchmark for visual model progress.
+- [GLUE](https://gluebenchmark.com/) — Core language understanding benchmark for NLP models.
+
+## ✍️ Shivam’s Notes (Insight Section)
+
+- Start with the simplest model that meets business constraints, then scale only when error analysis demands it.
+- AI failures in production are usually data-contract and monitoring failures, not paper-level architecture gaps.
+- In high-risk domains, calibrated uncertainty and fallback policies are more valuable than raw benchmark gains.
