@@ -1,4 +1,4 @@
-# Shivam Awesome NLP
+# Awesome NLP
 
 A curated, practical roadmap of papers, libraries, datasets, courses, and tools for modern Natural Language Processing.
 
