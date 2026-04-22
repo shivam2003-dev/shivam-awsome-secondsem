@@ -1,4 +1,4 @@
-# Shivam Awesome AI Repository
+# Awesome AI Repository
 
 This repository is now organized in a consistent, GitHub-style structure with one folder per domain.
 
