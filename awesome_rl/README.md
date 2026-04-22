@@ -1,4 +1,4 @@
-# Shivam Awesome Reinforcement Learning
+# Awesome Reinforcement Learning
 
 A curated roadmap of papers, libraries, datasets/environments, courses, tools, projects, blogs, and benchmarks for modern Reinforcement Learning (RL).
 
