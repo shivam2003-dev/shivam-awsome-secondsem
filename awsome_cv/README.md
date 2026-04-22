@@ -99,7 +99,24 @@ A curated, production-aware roadmap for learning and building modern Computer Vi
 - **IoU / Dice** — Primary semantic/instance segmentation overlap metrics.
 - **FPS / P95 latency** — Deployment-readiness metrics for real-time systems.
 
-## 🛠 Tools / Ecosystem
+## 🧪 Experiments (Actionable)
+
+- **Detection trade-offs:** Benchmark YOLO vs Faster R-CNN on COCO for mAP/latency/cost.
+- **Segmentation robustness:** Compare U-Net, DeepLab, and Mask R-CNN under resolution and domain shifts.
+- **Vision-language retrieval:** Fine-tune CLIP on a domain corpus and evaluate zero-shot vs supervised retrieval.
+
+## 🏗 CV System Design (IMPORTANT)
+
+- **Data pipeline first:** Version data splits, augmentations, and annotation policies before model tuning.
+- **Two-stage serving:** Use cheap classifier gates before expensive detector/segmentor passes for latency budgets.
+- **Edge/cloud split:** Run lightweight preprocessing on-device and batch heavy inference in GPU services.
+
+## ⚙️ CV Infra / Serving (DevOps angle)
+
+- [NVIDIA Triton Inference Server](https://github.com/triton-inference-server/server) — Multi-framework model serving with dynamic batching.
+- [TorchServe](https://github.com/pytorch/serve) — PyTorch-native serving with model archiving and handlers.
+- [ONNX Runtime](https://github.com/microsoft/onnxruntime) — High-performance cross-platform inference runtime.
+- [Ray Serve](https://docs.ray.io/en/latest/serve/index.html) — Scalable Python-native API serving for CV endpoints.
 
 - [Weights & Biases](https://wandb.ai/site) — Experiment tracking and artifact management.
 - [FiftyOne](https://github.com/voxel51/fiftyone) — Dataset curation and model error analysis.

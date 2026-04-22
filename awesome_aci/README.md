@@ -98,7 +98,24 @@ A curated guide for Artificial Intelligence and Computational Intelligence spann
 - **Latency / throughput / cost** — Production efficiency metrics.
 - **Constraint violation rate** — Safety/compliance quality signal.
 
-## 🛠 Tools / Ecosystem
+## 🧪 Experiments (Actionable)
+
+- **Hybrid AI pipeline:** Combine symbolic constraints with neural classifiers and measure consistency gains.
+- **Optimizer comparison:** Benchmark PSO, DE, and Bayesian optimization on the same black-box objective suite.
+- **Foundation-model baseline:** Compare frozen-embedding linear probes vs full fine-tuning on domain tasks.
+
+## 🏗 AI/CI System Design (IMPORTANT)
+
+- **Model portfolio design:** Use lightweight models for routing and expensive models for hard cases.
+- **Human-in-the-loop controls:** Add review checkpoints where uncertainty or risk exceeds thresholds.
+- **Lifecycle governance:** Enforce data versioning, model cards, and deployment rollback strategies.
+
+## ⚙️ AI Infra / Serving (DevOps angle)
+
+- [Ray](https://github.com/ray-project/ray) — Distributed execution framework for scalable AI workloads.
+- [MLflow](https://github.com/mlflow/mlflow) — Experiment tracking, model registry, and deployment packaging.
+- [Kubeflow](https://www.kubeflow.org/) — Kubernetes-native orchestration for ML pipelines.
+- [ONNX Runtime](https://github.com/microsoft/onnxruntime) — Portable high-performance inference engine.
 
 - [Weights & Biases](https://wandb.ai/site) — Experiment tracking and collaboration.
 - [DVC](https://github.com/iterative/dvc) — Data/model versioning.

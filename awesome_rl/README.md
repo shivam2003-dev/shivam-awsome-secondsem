@@ -100,7 +100,13 @@ A curated, practical map of modern Reinforcement Learning from core theory to sc
 - **Sample efficiency** — Reward achieved per interaction budget.
 - **Regret / violation rate** — Safety and constraint-aware decision quality.
 
-## 🛠 Tools / Ecosystem
+## 🧪 Experiments (Actionable)
+
+- **On-policy vs off-policy:** Compare PPO, SAC, and TD3 on identical MuJoCo compute budgets.
+- **Offline RL quality:** Benchmark behavior cloning, CQL, and Decision Transformer on D4RL tasks.
+- **Generalization stress test:** Train on Procgen easy seeds and evaluate out-of-distribution seeds.
+
+## 🏗 RL System Design (IMPORTANT)
 
 - [TensorBoard](https://www.tensorflow.org/tensorboard) — Training diagnostics and reward visualization.
 - [EnvPool](https://github.com/sail-sg/envpool) — High-throughput vectorized environment execution.

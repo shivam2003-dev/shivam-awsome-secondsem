@@ -103,7 +103,13 @@ A curated, practical, and engineer-friendly map of modern NLP research, tooling,
 - [F1 / Exact Match (SQuAD)](https://rajpurkar.github.io/SQuAD-explorer/) — Standard pair of QA metrics for overlap and exact correctness.
 - [BERTScore](https://arxiv.org/abs/1904.09675) — Semantic similarity metric aligned better with human judgments than lexical overlap.
 
-## 🛠 Tools / Ecosystem
+## 🧪 Experiments (Actionable)
+
+- **Fine-tune BERT:** Fine-tune `bert-base-uncased` on MRPC in GLUE and compare full fine-tuning vs LoRA.
+- **Build a RAG system:** Index technical docs with FAISS and compare retrieval quality under dense vs hybrid search.
+- **Train a tokenizer:** Train BPE vs Unigram tokenizers on your domain corpus and measure perplexity/latency trade-offs.
+
+## 🏗 NLP System Design (IMPORTANT)
 
 - [LangChain](https://github.com/langchain-ai/langchain) — Framework for orchestrating LLM chains, tools, and retrieval workflows.
 - [LlamaIndex](https://github.com/run-llama/llama_index) — Data framework for retrieval and agent pipelines over private corpora.
