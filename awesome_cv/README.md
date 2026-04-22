@@ -1,4 +1,4 @@
-# Shivam Awesome Computer Vision
+# Awesome Computer Vision
 
 A curated roadmap of papers, libraries, datasets, courses, tools, projects, blogs, and benchmarks for modern Computer Vision.
 
