@@ -1,4 +1,4 @@
-# Shivam Awesome Artificial & Computational Intelligence
+# Awesome Artificial & Computational Intelligence
 
 A curated roadmap of papers, libraries, datasets, courses, tools, projects, blogs, and benchmarks for Artificial Intelligence (AI) and Computational Intelligence (CI).
 
